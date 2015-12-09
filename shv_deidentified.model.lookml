@@ -206,11 +206,12 @@
   joins:
     - join: sp_need 
       type: left_outer 
-      sql_on: ${sp_need.client_id} = ${sp_client.client_id}
+      sql_on:  ${sp_client.client_id} = ${sp_need.client_id}
       relationship: many_to_one
-  - join: sp_need_service
+      
+    - join: sp_need_service
       type: left_outer 
-      sql_on: ${sp_need_service.client_id} = ${sp_client.client_id}
+      sql_on:  ${sp_client.client_id} = ${sp_need_service.client_id}
       relationship: many_to_one
 
 - explore: sp_client_answervisibility
