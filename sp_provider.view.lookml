@@ -177,6 +177,7 @@
   - dimension: maintaining_provider_id
     type: int
     sql: ${TABLE}.maintaining_provider_id
+    primary_key: true
 
   - dimension: matrix_flag
     type: yesno

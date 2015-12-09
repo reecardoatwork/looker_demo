@@ -15,6 +15,7 @@
   - dimension: client_id
     type: int
     sql: ${TABLE}.client_id
+    primary_key: true
 
   - dimension_group: date_added
     type: time
